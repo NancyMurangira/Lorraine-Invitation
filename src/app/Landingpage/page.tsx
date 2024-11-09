@@ -74,7 +74,7 @@ const GraduationInvitation = () => {
         }}
       >
         <img
-          src="/PHOTO-2024-07-19-21-38-47.jpg"
+          src="/IMG_6730.jpg"
           alt="Graduate Portrait"
           className="w-full h-full object-cover opacity-30 blur-sm scale-110"
         />
@@ -103,7 +103,7 @@ const GraduationInvitation = () => {
                     <div className="absolute inset-0 bg-gradient-to-r from-lime-500/40 via-blue-500/40 to-pink-500/40 rounded-full blur group-hover:scale-110 transition-transform duration-500" />
                     <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-lime-500/40">
                       <img
-                        src="/PHOTO-2024-07-19-21-38-47.jpg"
+                        src="/IMG_6732.jpg"
                         alt="Graduate Portrait"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
@@ -141,15 +141,15 @@ const GraduationInvitation = () => {
                   <div className="space-y-4 sm:space-y-6 text-lime-100/80 tracking-wider">
                     <div className="flex items-center justify-center gap-3 hover:scale-105 transition-transform">
                       <Calendar className="w-6 h-6 sm:w-8 sm:h-8 text-blue-300" />
-                      <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80">15th January 2025</span>
+                      <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80">November 10,2024</span>
                     </div>
                     <div className="flex items-center justify-center gap-3 hover:scale-105 transition-transform">
                       <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-blue-300" />
-                      <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80">5:00 PM</span>
+                      <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80">3:00 PM</span>
                     </div>
                     <div className="flex items-center justify-center gap-3 hover:scale-105 transition-transform">
                       <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-blue-300" />
-                      <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80">+250 781 199 716</span>
+                      <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80"> 0788842520 || 0788574300 || 0781199716 </span>
                     </div>
                   </div>
 
