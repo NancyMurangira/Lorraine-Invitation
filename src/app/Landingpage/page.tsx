@@ -85,7 +85,7 @@ const GraduationInvitation = () => {
       <div className="absolute inset-0 overflow-auto py-8 px-4">
         <div className="min-h-full w-full flex items-center justify-center">
           <div 
-            className={`w-full max-w-7xl transform transition-all duration-1000 ${
+            className={`w-full max-w-4xl transform transition-all duration-1000 ${
               isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
             }`}
           >
@@ -136,30 +136,42 @@ const GraduationInvitation = () => {
                   </h3>
                 </div>
 
-                {/* Details Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 mt-6">
-                  <div className="space-y-4 sm:space-y-6 text-lime-100/80 tracking-wider">
-                    <div className="flex items-center justify-center gap-3 hover:scale-105 transition-transform">
-                      <Calendar className="w-6 h-6 sm:w-8 sm:h-8 text-blue-300" />
-                      <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80">November 10,2024</span>
-                    </div>
-                    <div className="flex items-center justify-center gap-3 hover:scale-105 transition-transform">
-                      <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-blue-300" />
-                      <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80">3:00 PM</span>
-                    </div>
-                    <div className="flex items-center justify-center gap-3 hover:scale-105 transition-transform">
-                      <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-blue-300" />
-                      <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80"> 0788842520 || 0788574300 || 0781199716 </span>
-                    </div>
+                {/* Event Details */}
+                <div className="space-y-4 text-lime-100/80 tracking-wider">
+                  <div className="flex items-center justify-center gap-3 hover:scale-105 transition-transform">
+                    <Calendar className="w-6 h-6 sm:w-8 sm:h-8 text-blue-300" />
+                    <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80">November 10, 2024</span>
                   </div>
+                  <div className="flex items-center justify-center gap-3 hover:scale-105 transition-transform">
+                    <Clock className="w-6 h-6 sm:w-8 sm:h-8 text-blue-300" />
+                    <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80">3:00 PM</span>
+                  </div>
+                  <div className="flex items-center justify-center gap-3 hover:scale-105 transition-transform">
+                    <Phone className="w-6 h-6 sm:w-8 sm:h-8 text-blue-300" />
+                    <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80">0788842520 || 0788574300 || 0781199716</span>
+                  </div>
+                </div>
 
-                  <div className="flex items-center justify-center gap-3 hover:scale-105 transition-transform flex-col sm:flex-row">
+                {/* Location Section with Optimized Map Display */}
+                <div className="space-y-6">
+                  <div className="flex items-center justify-center gap-3">
                     <MapPin className="w-6 h-6 sm:w-8 sm:h-8 text-blue-300" />
                     <span className="text-lg sm:text-xl md:text-2xl text-coral-100/80">Venue Location</span>
                   </div>
                   
-                  {/* Map Image */}
-                  <div className="w-full h-60 md:h-80 bg-cover bg-center rounded-xl" style={{ backgroundImage: 'url(/location.png)' }} />
+                  {/* Optimized Map Container */}
+                  <div className="relative w-full aspect-[1.5] max-h-[500px]">
+                    <img
+                      src="/location.png"
+                      alt="Location Map"
+                      className="w-full h-full object-contain rounded-xl border-2 border-lime-500/30 shadow-xl bg-white/5 backdrop-blur-sm"
+                    />
+                    <div className="absolute inset-0 rounded-xl bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
+                  </div>
+
+                  <p className="text-sm text-lime-100/60 mt-2">
+                    Tap image to view full map
+                  </p>
                 </div>
               </div>
             </div>
